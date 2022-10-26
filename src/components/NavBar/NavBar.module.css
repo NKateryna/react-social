@@ -1,0 +1,12 @@
+.nav {
+  grid-area: n;
+  background-color: var(--light-pistachio-color);
+}
+
+.item a {
+  color: var(--color-pistachio-text);
+}
+
+.item a.active {
+  color: rgb(168, 103, 4);
+}

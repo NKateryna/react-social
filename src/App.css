@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Noto Sans Display", sans-serif;
+  font-size: 14px;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+:root {
+  --light-green-color: #7fa101;
+  --pistachio-color: #cfd541;
+  --light-pistachio-color: #dfe6a4;
+  --default-background-color: #f2f3f0;
+  --default-gray-color: #b9cbd7;
+  --color-white-text: #fafaf9;
+  --color-black-text: #2e3427;
+  --color-pistachio-text: #2d3900;
+}
+
+.app-wraper {
+  display: grid;
+  margin: 0px auto;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  grid-template-areas:
+    "h h h"
+    "n c c";
+  grid-template-rows: 60px 1fr;
+  grid-template-columns: 2fr 10fr;
+  /* grid-gap: 10px; */
+}
+
+.app-wraper-content {
+  grid-area: c;
+  background-color: var(--default-background-color);
+}
